@@ -17,9 +17,6 @@ public class Search_Insert_Position {
 		System.out.println("enter the target");
 		int target = input.nextInt();
 		System.out.println(array(num,target));
-		
-		
-		
 	}
 	public static int array(int[] num, int target) {
 		int start=0;
@@ -27,8 +24,6 @@ public class Search_Insert_Position {
 		int  mid;
 		while(start<=end) {
 			 mid = start+(end-start)/2;
-			
-			
 			if(num[mid]<target) {
 				start = mid+1;
 			}
@@ -39,8 +34,6 @@ public class Search_Insert_Position {
 				return mid;
 			}
 		}
-		
-		return start;
-		
+		return start;	
 	}
 }
