@@ -1,7 +1,10 @@
-package ArrayProblems;
+package HackerRankandLeetCodeProblems;
+
 import java.util.Arrays;
 import java.util.Scanner;
-public class TwoSum {
+
+public class Search_Insert_Position {
+
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("enter the size of the array");
@@ -13,21 +16,24 @@ public class TwoSum {
 		}
 		System.out.println("enter the target");
 		int target = input.nextInt();
-		System.out.println(Arrays.toString(array(num,target)));
-		
-		
+		System.out.println(array(num,target));
 	}
-	public static int[] array(int[] num, int target) {
-		int[] result = new int[2];
-		for(int i = 0; i<num.length; i++) {
-			for(int j = i+1; j<num.length; j++) {
-				if(num[i]+num[j] == target) {
-				result[0] = i;
-				result[1] = j;
-				}
-			}	
+	public static int array(int[] num, int target) {
+		int start=0;
+		int end = num.length-1;
+		int  mid;
+		while(start<=end) {
+			 mid = start+(end-start)/2;
+			if(num[mid]<target) {
+				start = mid+1;
+			}
+			else if(num[mid]>target) {
+				end = mid-1;
+			}
+			else {
+				return mid;
+			}
 		}
-		return result;
-		
+		return start;	
 	}
 }

@@ -1,9 +1,8 @@
-package ArrayProblems;
+package HackerRankandLeetCodeProblems;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Reversearray {
+public class MaxandMin {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -14,19 +13,19 @@ public class Reversearray {
 		for(int i = 0; i<num.length; i++) {
 			num[i] = input.nextInt();
 		}
-		System.out.println(Arrays.toString(reverseArray(num)));
-
+		maxMin(num);
 	}
-	public static int[] reverseArray(int[] arr) {
-		int i = 0;
-		int j = arr.length-1;
-		int temp = 0;
-		while(i<j) {
-			temp = arr[i];
-			arr[i++] = arr[j];
-			arr[j--] = temp;			
+	public static void maxMin(int arr[]) {
+		int max = arr[0];
+		int min = arr[0];
+		for(int i = 1; i<arr.length; i++) {
+			if(max < arr[i]) {
+				max = arr[i];
+			}
+			else if(min > arr[i]) {
+				min = arr[i];
+			}		
 		}
-		return arr;		
-		}	
+		System.out.println("max :"+max+" min :"+min);
 	}
-
+}

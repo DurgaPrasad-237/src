@@ -1,4 +1,4 @@
-package ArrayProblems;
+package HackerRankandLeetCodeProblems;
 public class Factorial {
 	public static void main(String[] args) {
 		System.out.println(xx(6));

@@ -1,9 +1,9 @@
-package ArrayProblems;
+package HackerRankandLeetCodeProblems;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayCopy {
+public class RemoveDuplicateElements {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -14,14 +14,20 @@ public class ArrayCopy {
 		for(int i = 0; i<num.length; i++) {
 			num[i] = input.nextInt();
 		}
-		copy(num);
+		System.out.println(removeDuplicates(num));
 	}
-	public static void copy(int arr[]) {
-		int arr2[] = new int[arr.length];
-		for(int i = 0; i<arr.length; i++) {
-			arr2[i] = arr[i];
+	public static int removeDuplicates(int nums[]) {
+		int  k = 0;
+		for(int i = 1; i<nums.length; i++) {
+			if(nums[k] != nums[i]) {
+				k++;
+				nums[k] = nums[i];	
+			}
 		}
-		System.out.println(Arrays.toString(arr2));
+		System.out.println(Arrays.toString(nums));
+		return k+1;	
 	}
-
 }
+	
+
+

@@ -1,9 +1,9 @@
-package ArrayProblems;
+package HackerRankandLeetCodeProblems;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class RemoveDuplicateElements {
+public class RemoveElements {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
@@ -11,23 +11,23 @@ public class RemoveDuplicateElements {
 		int size = input.nextInt();
 		int num[] = new int[size];
 		System.out.println("enter the elements");
+		int target = input.nextInt();
 		for(int i = 0; i<num.length; i++) {
 			num[i] = input.nextInt();
 		}
-		System.out.println(removeDuplicates(num));
+		System.out.println((singleNumber(num,target)));
 	}
-	public static int removeDuplicates(int nums[]) {
-		int  k = 0;
-		for(int i = 1; i<nums.length; i++) {
-			if(nums[k] != nums[i]) {
-				k++;
-				nums[k] = nums[i];	
+	public static int singleNumber(int nums[], int value) {
+		int x = 0;
+		for(int i = 0; i<nums.length; i++) {
+			if(nums[i] != value) {
+				nums[x] = nums[i];
+				x++;
 			}
 		}
 		System.out.println(Arrays.toString(nums));
-		return k+1;	
-	}
+		return x;
+	}		
 }
-	
 
 

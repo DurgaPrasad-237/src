@@ -1,4 +1,4 @@
-package ArrayProblems;
+package HackerRankandLeetCodeProblems;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +22,7 @@ public class BigSum {
 		  for(int i = 0; i<ar.size(); i++) {
 			x = x+ar.get(i);
 		  }
-		  return x;
-		   
-
+		  return x;	   
 	  }
 
 }
