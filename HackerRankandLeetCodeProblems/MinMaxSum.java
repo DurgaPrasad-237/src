@@ -23,17 +23,14 @@ public class MinMaxSum {
 		for(int k = 0; k<arr.size(); k++) {
 			s = 0; l=0;
 			for(i= 0; i<arr.size(); i++) {
-				if(k!=i) {
-				
+				if(k!=i) {	
 					s = s+arr.get((int) i);
-					l = l+arr.get((int) i);
-				
+					l = l+arr.get((int) i);		
 				}		
 			}
 			if(arr2[0] == 0 || arr2[0]>=s) {
 				arr2[0] = s;
 			}
-		
 			if(arr2[1] == 0 || arr2[1]<=l) {
 				arr2[1] = l;
 			}		
@@ -43,4 +40,3 @@ public class MinMaxSum {
 	
 	
 }
-
