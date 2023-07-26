@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
 public class Grade {
-
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		List<Integer> arr = new ArrayList<Integer>();
