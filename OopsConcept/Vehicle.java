@@ -21,7 +21,6 @@ public class Vehicle {
 		obj.color = "red";
 		obj.addProperties(obj.name, obj.price, obj.color);
 		obj.details();
-
 	}
 
 }
