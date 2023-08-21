@@ -7,7 +7,6 @@ public class SecondClass extends Firstclass {
 		obj.method2();
 		obj.method1();
 	}
-
 	@Override
 	public void method2() {
 	System.out.println("this is the method2 in the firstclass");	
