@@ -18,7 +18,7 @@ public class MaxMinrecusrion {
 		
 	Result result = dac(arr,0,arr.length-1);
 		System.out.println("maximum "+result.max);
-		System.out.println("minimu "=result.min);
+		System.out.println("minimum "+result.min);
 	}
 	public static Result dac(int arr[],int start, int end) {
 		int maximum = arr[0];
