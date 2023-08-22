@@ -14,9 +14,6 @@ public class TestEncapsulation {
 		ifsccode = obj.getIfscCode();
 		branchpin = obj.getBranchPin();
 		System.out.println("branchname:"+bankName+"\nifscode:"+ifsccode+"\nbranchPin:"+branchpin);
-	
-		
-
 	}
 
 }
