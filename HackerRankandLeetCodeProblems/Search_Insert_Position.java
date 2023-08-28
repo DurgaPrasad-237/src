@@ -1,4 +1,4 @@
-package HackerRankandLeetCodeProblems;
+package hackerRankandLeetCodeProblems;
 
 import java.util.Arrays;
 import java.util.Scanner;

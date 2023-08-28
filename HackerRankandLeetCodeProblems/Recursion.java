@@ -1,4 +1,4 @@
-package HackerRankandLeetCodeProblems;
+package hackerRankandLeetCodeProblems;
 
 public class Recursion {
 

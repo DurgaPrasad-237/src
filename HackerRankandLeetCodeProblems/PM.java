@@ -1,4 +1,4 @@
-package HackerRankandLeetCodeProblems;
+package hackerRankandLeetCodeProblems;
 
 import java.util.ArrayList;
 import java.util.List;
