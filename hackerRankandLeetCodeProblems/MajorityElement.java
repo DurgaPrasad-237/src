@@ -38,7 +38,7 @@ public class MajorityElement {
     public static int majorele(int arr[], int start, int end, int target) {
         while (start <= end) {
             int mid = start + (end - start) / 2;
-            if (arr[mid] == target && (mid == 0 || arr[mid - 1] != target)) {
+            if (arr[mid] == target && arr[mid - 1] != target) {
                 return mid;
             } else if (arr[mid] == target) {
                 end = mid - 1;
